@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400&display=swap');
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #131313;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #073042;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: aqua;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #073042;
+    font-family: 'Google Sans', sans-serif;
+}
+
+.outer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alternate{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.alternate p{
+    font-family: 'Google Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    overflow: hidden;
+}
+
+.logo{
+    width: 100%;
+    position: relative;
+    height: 80px;
+    background-color: #073042;
+}
+.logo img{
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.divlist{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+}
+.list{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.list li{
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+}
+.list li:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.middle{
+    position: relative;
+    width: 100%;
+    height: 100;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #131313;
+}
+.loaddiv{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+}
+.loaddiv p{
+    font-family: "Google Sans",sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+.elsediv{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+}
+.elsediv p{
+    font-family: "Google Sans",sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+}
+.div{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #073042;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div input[type="text"]{
+    width: 80%;
+    height: 30px;
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-family: 'Google Sans',sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+.div input[type="text"]:focus{
+    outline: none;
+    background-color: aliceblue;
+}
+.div input[type="submit"]{
+    width: 15%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: aqua;
+    color: black;
+    font-family: "Google Sans",sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+.div input[type="submit"]:hover{
+    background-color: #0000ee;
+    color: white;
+}
+.div input[type="submit"]:focus{
+    outline: none;
+    background-color: #0000ee;
+    color: white;
+}
+
+.card{
+    width: 100%;
+    height: 400px;
+    background: url(https://images.indianexpress.com/2020/07/what-to-watch-july-10-759.jpg?w=759);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.card::after{
+    position: absolute;
+    top: 0; left: 0;
+    content: "";
+    width: 100%;
+    height: 400px;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.5s ease-in-out;
+}
+.card:hover::after{
+    position: absolute;
+    top: 0; left: 0;
+    content: "";
+    width: 100%;
+    height: 400px;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.card p a{
+    text-decoration: none;
+    position: absolute;
+    z-index: 10;
+    font-family: "Google Sans",sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: white;
+    bottom: 20px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.right{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #131313;
+}
+.right div:last-child{
+    margin-bottom: 10px;
+}
+
+.search{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #073042;
+}
+.search input[type="text"]{
+    width: 90%;
+    height: 30px;
+    border: 2px solid #073042;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-family: 'Google Sans',sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+.search input[type="text"]:focus{
+    outline: none;
+    background-color: aliceblue;
+}
+.search input[type="submit"]{
+    margin-top: 10px;
+    width: 90%;
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: aqua;
+    color: black;
+    font-family: "Google Sans",sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+.search input[type="submit"]:hover{
+    background-color: #0000ee;
+    color: white;
+}
+.search input[type="submit"]:focus{
+    outline: none;
+    background-color: #0000ee;
+    color: white;
+}
+.invalid{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.weather{
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 130px 20px;
+    grid-template-areas: 
+    "temp img"
+    "city remove"
+}
+.temp{
+    grid-area: temp;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temp p:nth-child(1){
+    color: white;
+    font-size: 4em;
+}
+.temp p:nth-child(2){
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+.img{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weatherimg{
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+.city{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+.remove{
+    width: 100%;
+    height: 100%;
+}
+.x{
+    position: relative;
+    top: 1px;
+    left: 100px;
+    cursor: pointer;
+}
+.x div:nth-child(1){
+    width: 18px;
+    height: 4px;
+    background-color: gray;
+    border-radius: 10px;
+    transform: rotateZ(45deg);
+    transform-origin: left;
+}
+.x div:nth-child(2){
+    width: 18px;
+    height: 4px;
+    background-color: gray;
+    border-radius: 10px;
+    transform: rotateZ(-45deg);
+    transform-origin: left;
+    position: absolute;
+    top: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .outer{
+        display: none;
+    }
+    .alternate{
+        display: flex;
+    }
+}

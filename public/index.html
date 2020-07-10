@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./newslogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="index.css">
+    <title>BrokenNews</title>
+</head>
+<body>
+    
+    <div class="outer">
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                    <img src="./newslogo.png">
+                </div>
+                <div class="divlist">
+                    <ul class="list">
+                        <li onclick="categoryfunc(this)">Top Headlines</li>
+                        <li onclick="categoryfunc(this)">Sports</li>
+                        <li onclick="categoryfunc(this)">Business</li>
+                        <li onclick="categoryfunc(this)">Entertainment</li>
+                        <li onclick="categoryfunc(this)">Technology</li>
+                        <li onclick="categoryfunc(this)">Science</li>
+                        <li onclick="categoryfunc(this)">Politics</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="middle">
+                    <div class="div">
+                        <input type="text" id="middleinput" placeholder="a particular topic" autocomplete="off">
+                        <input type="submit" id="middlebutton" value="Search">
+                    </div>
+            </div>
+            <div class="right">
+                <div class="search">
+                        <input type="text" id="input" placeholder="City" autocomplete="off">
+                        <input type="submit" id="button" value="Add">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alternate">
+        <p>Not optimized for mobile devices!</p>
+        <p>View in landscape mode or on desktop</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>
