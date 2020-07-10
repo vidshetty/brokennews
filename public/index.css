@@ -367,7 +367,7 @@ body{
     top: 13px;
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:800px){
     .outer{
         display: none;
     }
