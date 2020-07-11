@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 1998;
 const NewsAPI = require('newsapi');
 const { query } = require("express");
-const apikey = '7a0df6124ad8442c9d463874b682c6c2';
+const apikey = '<enter your api key>';
 const newsapi = new NewsAPI(apikey);
 
 app.use(express.static("public"));
